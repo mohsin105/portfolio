@@ -13,9 +13,9 @@ const ProjectCard = ({project}) => {
             <div className='p-2'>
                 <h3 className='text-xl font-bold my-2'>{project.title}</h3>
                 <p className='text-base'>{project.details}</p>
-                <div className='flex flex-wrap gap-4 my-4'>
+                <div className='flex flex-wrap gap-8 my-4'>
                     {project.tech_stack.map((tool , indx) => (
-                        <div key={indx} className='p-2 rounded-md bg-cyan-300 font-semibold text-base'>
+                        <div key={indx} className='p-2 px-4 rounded-md bg-cyan-900 font-semibold text-base inset-shadow-violet-600 inset-shadow-2xs'>
                             {tool}
                         </div>
                     ))}

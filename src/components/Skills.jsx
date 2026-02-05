@@ -72,11 +72,10 @@ const Skills = () => {
     ]
 
     return (
-        <div className='w-11/12 mx-auto'>
-            Skills:
+        <div id='skills' className='w-11/12 mx-auto scroll-mt-16'>
+            <h2 className='text-4xl font-bold'>Skills:</h2>
             <div className='my-8'>
-
-                <h3 className='font-bold text-xl'>FrontEnd</h3>
+                <h3 className='font-bold text-xl mb-4'>FrontEnd</h3>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 text-center'>
                     {frontEnd_tools.map((tool,indx) => (
                         <ToolCard key={indx} tool={tool} />
@@ -84,8 +83,7 @@ const Skills = () => {
                 </div>
             </div>
             <div className="mb-8">
-
-                <h3 className='font-bold text-xl'>Backend</h3>
+                <h3 className='font-bold text-xl mb-4'>Backend</h3>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 text-center'>
                     {backend_tools.map((tool, indx) => (
                         <ToolCard key={indx} tool={tool}/>
@@ -93,8 +91,7 @@ const Skills = () => {
                 </div>
             </div>
             <div className="mb-8">
-
-                <h3 className='font-bold text-xl'>Tools</h3>
+                <h3 className='font-bold text-xl mb-4'>Tools</h3>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 text-center'>
                     {tools.map((tool, indx) => (
                         <ToolCard key={indx} tool={tool} />

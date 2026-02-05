@@ -6,6 +6,7 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
+import { IoIosArrowDropupCircle } from 'react-icons/io';
 
 const Home = () => {
     return (
@@ -14,24 +15,29 @@ const Home = () => {
                 <Navbar/>
             </nav>
             {/* <h1>WelCome To Portfolio Website</h1> */}
-            <section>
+            <section className=''>
                 <HeroSection/>
             </section>
-            <div>
+            <div >
                 <AboutMe/>
             </div>
             <div>
                 <Skills/>
             </div>
-            <section>
+            <section className=''>
                 <Projects/>
             </section>
-            <section>
+            <section className='scroll-mt-16'>
                 <ContactMe/>
             </section>
             <footer>
                 <Footer/>
             </footer>
+            <div className='fixed right-0 bottom-0 '>
+                <a href="#top">
+                    <IoIosArrowDropupCircle className='text-5xl text-yellow-600 hover:text-yellow-900 font-extrabold '/>
+                </a>
+            </div>
         </div>
     );
 };
