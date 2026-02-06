@@ -1,14 +1,15 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa6';
+import { TbBaselineDensitySmall } from 'react-icons/tb';
 
 const Navbar = () => {
     return (
-        <div id='navBar' className='w-full  bg-slate-600 py-1 text-gray-100 '>
+        <div id='navBar' className='w-full  bg-slate-600 py-1 text-gray-100'>
             <div className='w-11/12 mx-auto flex justify-between'>
                 <div className=" font-semibold text-xl p-2 hover:bg-gray-800 rounded-sm flex items-center">
                     Mohsin
                 </div>
-                <div className=" basis-1/3">
+                <div className="hidden md:block basis-1/3">
                     <ul className='flex justify-around items-center py-2 md:py-0 gap-1 text-lg'>
                         <li className='  font-semibold '>
                             <a href="#about_me" className='p-1 md:p-2 hover:bg-slate-900 rounded-sm'>About</a>
@@ -27,6 +28,9 @@ const Navbar = () => {
                             Resume
                         </li>
                     </ul>
+                </div>
+                <div className='md:hidden flex items-center'>
+                    <TbBaselineDensitySmall className='text-2xl'/>
                 </div>
             </div>
         </div>

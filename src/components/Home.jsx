@@ -33,7 +33,7 @@ const Home = () => {
             <footer>
                 <Footer/>
             </footer>
-            <div className='fixed right-0 bottom-0 '>
+            <div className='fixed right-4 bottom-4 '>
                 <a href="#top">
                     <IoIosArrowDropupCircle className='text-5xl text-yellow-600 hover:text-yellow-900 font-extrabold '/>
                 </a>
