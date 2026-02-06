@@ -16,7 +16,7 @@ const ContactMe = () => {
                     <p className='text-lg font-semibold mb-4'>Let's Get In Touch</p>
                     <div>
                         <a 
-                            href="" 
+                            href="mailto:mohsinibnaftab@gmail.com" 
                             className='flex items-center justify-between min-w-fit w-1/2 gap-4 text-xl p-4 py-4 rounded-md bg-slate-600/50 hover:scale-105'>
                             <BiLogoGmail className='text-3xl border-2 rounded-md '/>
                             mohsinibnaftab@gmail.com
