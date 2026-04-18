@@ -30,9 +30,9 @@ const Navbar = () => {
                         </li>
                         <li className='p-1 md:p-2 font-semibold hover:bg-slate-900 rounded-sm '>
                             <a 
-                                // href="/public/phitron_certificate.pdf"
-                                href="#"
-                                // download="cv_mohsin_ibn_aftab.pdf"
+                                href="/public/mohsin_cv.pdf"
+                                // href="#"
+                                download="cv_mohsin_ibn_aftab.pdf"
                                 className='flex items-center gap-1'>
                                 <FaDownload  />
                                 Resume
@@ -60,9 +60,9 @@ const Navbar = () => {
                             </li>
                             <li className='p-4 bg-gray-800 hover:bg-gray-700 rounded-md  '>
                                 <a 
-                                    // href="/public/phitron_certificate.pdf"
-                                    href="#"
-                                    // download="cv_mohsin_ibn_aftab.pdf"
+                                    href="/public/mohsin_cv.pdf"
+                                    // href="#"
+                                    download="cv_mohsin_ibn_aftab.pdf"
                                     className='flex items-center gap-4'>
 
                                     <FaDownload  />

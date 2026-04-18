@@ -1,16 +1,16 @@
 import React from 'react';
 import { FaLink, FaServer } from 'react-icons/fa6';
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project,id}) => {
     return (
-        <div className='w-full p-4 bg-slate-800/80 hover:bg-slate-800/50 rounded-lg shadow-2xl'>
-            <div className=' bg-violet-400 rounded-lg '>
+        <div className={`${id === 0 && 'col-span-1 md:col-span-2 md:flex md:space-x-4'} w-full p-4 bg-slate-800/80 hover:bg-slate-800/50 rounded-lg shadow-2xl`}>
+            <div className={`${id === 0 && 'md:basis-1/2 h-fit '}bg-violet-400 rounded-lg `}>
                 <img 
                     src={project.image} 
                     alt="project_img"
-                    className='rounded-lg' />
+                    className='rounded-lg object-fill' />
             </div>
-            <div className='p-2'>
+            <div className={`${id === 0 && 'md:basis-1/2'} p-2`}>
                 <h3 className='text-xl font-bold my-2'>{project.title}</h3>
                 <p className='text-base'>{project.details}</p>
                 <div className='flex flex-wrap gap-8 my-4'>

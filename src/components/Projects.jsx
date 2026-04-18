@@ -2,8 +2,21 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import whistleCover from '../assets/images/whistle_home.png'
 import eventumCover from '../assets/images/eventum_cover.png'
+import bookbridgeCover from '../assets/images/bookbridge_ss_full3cut.jpeg'
 const Projects = () => {
     const projects_details = [
+        {
+            'image' :bookbridgeCover,
+            'title' : 'BookBridge',
+            'details':'BookBridge is a full-stack web application built with Django REST Framework and React that enables peer-to-peer book sharing within a local community. Instead of a traditional library, users can lend and borrow books directly from each other through a structured request and approval system. The platform features real-time notifications, borrowing records, extension requests, overdue handling with late fines, and a premium membership system. It also includes advanced search, filtering, and a review system for both books and users. Designed with real-world workflows and scalable architecture in mind, BookBridge demonstrates practical full-stack development skills and thoughtful system design.',
+            'tech_stack':[
+                'React', 'Django-DRF' , 'PostgresQL' , 'TailwindCSS'
+            ],
+            'frontend_live_link' :'https://book-bridge-client.vercel.app/',
+            'backend_live_link' : 'https://book-bridge-one.vercel.app/swagger/',
+            'frontend_github': 'https://github.com/mohsin105/book-bridge-client',
+            'backend_github' :'https://github.com/mohsin105/Book_Bridge',
+        },
         {
             'image' :whistleCover,
             'title' : 'Whistle',
@@ -36,7 +49,7 @@ const Projects = () => {
             <h4 className='text-xl font-bold  text-center text-slate-400'>Real-world projects showcasing practical full-stack skills</h4>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 my-10'>
                 {projects_details.map((project , indx) => (
-                    <ProjectCard key={indx} project={project} />
+                    <ProjectCard key={indx} project={project} id={indx} />
                 ))}
             </div>
         </div>
