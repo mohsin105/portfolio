@@ -1,9 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
+import profileImg from '../assets/images/profile_photo2.jpg';
 
 const HeroSection = () => {
     return (
-        <div id="top" className='w-full h-screen md:h-[70vh] bg-linear-to-br from-slate-800 via-violet-900/30 to-slate-950 text-gray-100 scroll-mt-16'>
+        <div id="top" className='w-full h-screen max-h-fit md:h-[70vh] bg-linear-to-br from-slate-800 via-violet-900/30 to-slate-950 text-gray-100 scroll-mt-16'>
             <div className='w-11/12 mx-auto flex flex-col md:flex-row h-full'>
                 <div className='basis-1/2 h-[80vh] md:h-full flex items-center'>
                     <div>
@@ -30,7 +31,11 @@ const HeroSection = () => {
                 </div>
                 <div className='basis-1/2 p-4 h-full w-full flex items-center justify-center'>
                     <div 
-                        className='bg-slate-600 rounded-md w-2/3  h-11/12 ring-4 ring-violet-500/50 ring-offset-4 ring-offset-indigo-900/50'>
+                        className='bg-slate-600 rounded-full w-2/3  max-w-xs md:max-w-md aspect-square overflow-hidden ring-4 ring-violet-500/50 ring-offset-4 ring-offset-indigo-900/50'>
+                            <img 
+                                src={profileImg} 
+                                alt="profile_photo"
+                                className="object-cover object-top w-full h-auto rounded-full  " />
                     </div>
                 </div>
             </div>

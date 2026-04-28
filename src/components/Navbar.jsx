@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaDownload } from 'react-icons/fa6';
 import { FiXCircle } from 'react-icons/fi';
 import { TbBaselineDensitySmall } from 'react-icons/tb';
-
+import logo from '../assets/images/M_logo.jpg'
 const Navbar = () => {
     const [sideBarOpen , setSideBarOpen] = useState(false);
     useEffect(()=>{
@@ -11,8 +11,16 @@ const Navbar = () => {
     return (
         <div id='navBar' className='w-full  bg-slate-600 py-1 text-gray-100'>
             <div className='w-11/12 mx-auto flex justify-between'>
-                <div className=" font-semibold text-xl p-2 hover:bg-gray-800 rounded-sm flex items-center">
-                    Mohsin
+                <div className=" font-semibold text-xl p-2 hover:bg-gray-800 rounded-sm flex space-x-2 items-center">
+                    <div className='size-6 rounded-md'>
+                        <img 
+                            src={logo}
+                            alt="logo"
+                            className='rounded-md' />
+                    </div>
+                    <div>
+                        Mohsin
+                    </div>
                 </div>
                 <div className="hidden md:block basis-1/3">
                     <ul className='flex justify-around items-center py-2 md:py-0 gap-1 text-lg'>
